@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexusForge | Portfólio de Produtos</title>
+  <link rel="icon" href="../src/assets/icons8-controle-48.png" type="image/png" />
+  <link rel="stylesheet" href="../src/css/estilo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+ 
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <img src="../src/assets/icons8-controle-48.png" alt="Logo NexusForge" />
+        <span>Nexus<span class="accent">Forge</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="portifolio.html" class="nav-link active">Portfólio</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+        <li><a href="contato.html" class="nav-link">Contato</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+ 
+  <!-- PORTFÓLIO / PRODUTOS -->
+  <section class="portfolio page-section">
+    <div class="portfolio-container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">Nosso Catálogo</span>
+        <h2 class="section-title">Equipamentos de <span class="accent">Alta Performance</span></h2>
+        <p class="section-subtitle">Escolha sua arma. Navegue pelos nossos periféricos premium e monte o setup dos seus sonhos.</p>
+      </div>
+
+      <!-- Filtros de Categoria -->
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="perifericos">Periféricos</button>
+        <button class="filter-btn" data-filter="monitores">Monitores</button>
+        <button class="filter-btn" data-filter="cadeiras">Cadeiras</button>
+      </div>
+
+      <!-- Grid de Produtos -->
+      <div class="portfolio-grid reveal">
+        
+        <!-- Produto 1 -->
+        <div class="product-card" data-category="perifericos">
+          <div class="product-img-wrap">
+            <img src="../src/assets/teclado.jpg" alt="Teclado Mecânico" class="product-img" /> <!-- Substitua pela sua imagem -->
+            <div class="product-badge">Lançamento</div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Periféricos</span>
+            <h3 class="product-title">Teclado Mecânico Switch Red</h3>
+            <div class="product-price">
+              <span class="price-old">R$ 599,90</span>
+              <span class="price-new">R$ 449,90</span>
+            </div>
+            <button class="btn btn-primary btn-full"><i class="fas fa-shopping-cart"></i> Comprar</button>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="product-card" data-category="perifericos">
+          <div class="product-img-wrap">
+            <img src="../src/assets/mouse.jpg" alt="Mouse Gamer" class="product-img" />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Periféricos</span>
+            <h3 class="product-title">Mouse Ultra Leve 12.000 DPI</h3>
+            <div class="product-price">
+              <span class="price-new">R$ 299,00</span>
+            </div>
+            <button class="btn btn-primary btn-full"><i class="fas fa-shopping-cart"></i> Comprar</button>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="product-card" data-category="monitores">
+          <div class="product-img-wrap">
+            <img src="../src/assets/monitor.jpg" alt="Monitor 144Hz" class="product-img" />
+            <div class="product-badge accent-bg">-15%</div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Monitores</span>
+            <h3 class="product-title">Monitor Gamer 24" 144Hz 1ms</h3>
+            <div class="product-price">
+              <span class="price-old">R$ 1.499,00</span>
+              <span class="price-new">R$ 1.274,00</span>
+            </div>
+            <button class="btn btn-primary btn-full"><i class="fas fa-shopping-cart"></i> Comprar</button>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="product-card" data-category="cadeiras">
+          <div class="product-img-wrap">
+            <img src="../src/assets/cadeira.jpg" alt="Cadeira Gamer" class="product-img" />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Cadeiras</span>
+            <h3 class="product-title">Cadeira Ergonômica Pro Series</h3>
+            <div class="product-price">
+              <span class="price-new">R$ 1.899,90</span>
+            </div>
+            <button class="btn btn-primary btn-full"><i class="fas fa-shopping-cart"></i> Comprar</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">
+          <img src="../src/assets/icons8-controle-48.png" alt="Logo" />
+          <span>Nexus<span class="accent">Forge</span></span>
+        </a>
+        <p>Periféricos e acessórios gamer com qualidade premium. Feito por gamers, para gamers.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="portifolio.html">Portfólio</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Produtos</h4>
+          <ul>
+            <li><a href="portifolio.html">Periféricos</a></li>
+            <li><a href="portifolio.html">Monitores</a></li>
+            <li><a href="portifolio.html">Cadeiras</a></li>
+            <li><a href="portifolio.html">Headsets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <!-- Corrigi o email para NexusForge -->
+            <li><i class="fas fa-envelope"></i> contato@nexusforge.com.br</li>
+            <li><i class="fas fa-phone"></i> (11) 99999-0000</li>
+            <li><i class="fab fa-whatsapp"></i> (11) 99999-0001</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 NexusForge. Todos os direitos reservados.</p>
+      <p>Desenvolvido com <i class="fas fa-heart accent"></i> por gamers</p>
+    </div>
+  </footer>
+ 
+  <script src="../src/js/script.js"></script>
+</body>
+</html>
