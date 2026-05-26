@@ -11,7 +11,6 @@
 </head>
 <body>
  
-  <!-- NAVBAR -->
   <nav class="navbar scrolled" id="navbar">
     <div class="nav-container">
       <a href="../index.html" class="nav-logo">
@@ -24,13 +23,18 @@
         <li><a href="sobre.html" class="nav-link">Sobre</a></li>
         <li><a href="contato.html" class="nav-link">Contato</a></li>
       </ul>
+      
+      <div class="cart-icon" id="cartIcon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </div>
+
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
  
-  <!-- PORTFÓLIO / PRODUTOS -->
   <section class="portfolio page-section">
     <div class="portfolio-container">
       <div class="section-header text-center reveal">
@@ -39,7 +43,6 @@
         <p class="section-subtitle">Escolha sua arma. Navegue pelos nossos periféricos premium e monte o setup dos seus sonhos.</p>
       </div>
 
-      <!-- Filtros de Categoria -->
       <div class="portfolio-filters reveal">
         <button class="filter-btn active" data-filter="all">Todos</button>
         <button class="filter-btn" data-filter="perifericos">Periféricos</button>
@@ -47,13 +50,11 @@
         <button class="filter-btn" data-filter="cadeiras">Cadeiras</button>
       </div>
 
-      <!-- Grid de Produtos -->
       <div class="portfolio-grid reveal">
         
-        <!-- Produto 1 -->
         <div class="product-card" data-category="perifericos">
           <div class="product-img-wrap">
-            <img src="../src/assets/teclado.jpeg" alt="Teclado Mecânico" class="product-img" /> <!-- Substitua pela sua imagem -->
+            <img src="../src/assets/teclado.jpeg" alt="Teclado Mecânico" class="product-img" />
             <div class="product-badge">Lançamento</div>
           </div>
           <div class="product-info">
@@ -63,11 +64,12 @@
               <span class="price-old">R$ 599,90</span>
               <span class="price-new">R$ 449,90</span>
             </div>
-            <button class="btn btn-primary btn-full"><i class="fas fa-shopping-cart"></i> Comprar</button>
+            <button class="btn btn-primary btn-full add-to-cart" data-name="Teclado Mecânico Switch Red" data-price="449.90" data-img="../src/assets/teclado.jpeg">
+              <i class="fas fa-shopping-cart"></i> Comprar
+            </button>
           </div>
         </div>
 
-        <!-- Produto 2 -->
         <div class="product-card" data-category="perifericos">
           <div class="product-img-wrap">
             <img src="../src/assets/mouse.jpeg" alt="Mouse Gamer" class="product-img" />
@@ -78,11 +80,12 @@
             <div class="product-price">
               <span class="price-new">R$ 299,00</span>
             </div>
-            <button class="btn btn-primary btn-full"><i class="fas fa-shopping-cart"></i> Comprar</button>
+            <button class="btn btn-primary btn-full add-to-cart" data-name="Mouse Ultra Leve 12.000 DPI" data-price="299.00" data-img="../src/assets/mouse.jpeg">
+              <i class="fas fa-shopping-cart"></i> Comprar
+            </button>
           </div>
         </div>
 
-        <!-- Produto 3 -->
         <div class="product-card" data-category="monitores">
           <div class="product-img-wrap">
             <img src="../src/assets/monitor.jpeg" alt="Monitor 144Hz" class="product-img" />
@@ -95,11 +98,12 @@
               <span class="price-old">R$ 1.499,00</span>
               <span class="price-new">R$ 1.274,00</span>
             </div>
-            <button class="btn btn-primary btn-full"><i class="fas fa-shopping-cart"></i> Comprar</button>
+            <button class="btn btn-primary btn-full add-to-cart" data-name="Monitor Gamer 24 polegadas 144Hz" data-price="1274.00" data-img="../src/assets/monitor.jpeg">
+              <i class="fas fa-shopping-cart"></i> Comprar
+            </button>
           </div>
         </div>
 
-        <!-- Produto 4 -->
         <div class="product-card" data-category="cadeiras">
           <div class="product-img-wrap">
             <img src="../src/assets/cadeira.jpeg" alt="Cadeira Gamer" class="product-img" />
@@ -110,7 +114,9 @@
             <div class="product-price">
               <span class="price-new">R$ 1.899,90</span>
             </div>
-            <button class="btn btn-primary btn-full"><i class="fas fa-shopping-cart"></i> Comprar</button>
+            <button class="btn btn-primary btn-full add-to-cart" data-name="Cadeira Ergonômica Pro Series" data-price="1899.90" data-img="../src/assets/cadeira.jpeg">
+              <i class="fas fa-shopping-cart"></i> Comprar
+            </button>
           </div>
         </div>
 
@@ -118,7 +124,6 @@
     </div>
   </section>
  
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-top">
       <div class="footer-brand">
@@ -157,7 +162,6 @@
         <div class="footer-col">
           <h4>Contato</h4>
           <ul>
-            <!-- Corrigi o email para NexusForge -->
             <li><i class="fas fa-envelope"></i> contato@nexusforge.com.br</li>
             <li><i class="fas fa-phone"></i> (11) 99999-0000</li>
             <li><i class="fab fa-whatsapp"></i> (11) 99999-0001</li>
@@ -171,6 +175,23 @@
     </div>
   </footer>
  
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h2>Seu Carrinho</h2>
+      <button class="close-cart" id="closeCart"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotalValue">R$ 0,00</span>
+      </div>
+      <button class="btn btn-primary btn-full">Finalizar Compra</button>
+    </div>
+  </div>
+
   <script src="../src/js/script.js"></script>
 </body>
 </html>
