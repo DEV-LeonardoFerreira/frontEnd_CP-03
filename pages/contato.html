@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus | Forge</title>
+  <link rel="icon" href="../src/assets/icons8-controle-48.png" type="image/png" />
+  <link rel="stylesheet" href="../src/css/estilo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+ 
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <img src="../src/assets/icons8-controle-48.png" alt="Logo NeonPlay" />
+        <span>Nexus<span class="accent">Forge</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="portifolio.html" class="nav-link">Portfólio</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+        <li><a href="contato.html" class="nav-link active">Contato</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+ 
+  <!-- CONTATO -->
+  <section class="contato page-section">
+    <div class="section-header reveal">
+      <span class="section-tag">Fale Conosco</span>
+      <h2 class="section-title">Entre em <span class="accent">Contato</span></h2>
+      <p class="section-sub">Tem dúvidas, sugestões ou quer um orçamento? Fala com a gente!</p>
+    </div>
+ 
+    <div class="contato-container">
+      <div class="contato-info">
+        <div class="info-item reveal">
+          <span class="info-icon"><i class="fas fa-envelope"></i></span>
+          <div>
+            <strong>E-mail</strong>
+            <p>contato@nexusforge.com.br</p>
+          </div>
+        </div>
+        <div class="info-item reveal">
+          <span class="info-icon"><i class="fas fa-phone"></i></span>
+          <div>
+            <strong>Telefone</strong>
+            <p>(11) 99999-0000</p>
+          </div>
+        </div>
+        <div class="info-item reveal">
+          <span class="info-icon"><i class="fab fa-whatsapp"></i></span>
+          <div>
+            <strong>WhatsApp</strong>
+            <p>(11) 99999-0001</p>
+          </div>
+        </div>
+        <div class="info-item reveal">
+          <span class="info-icon"><i class="fas fa-clock"></i></span>
+          <div>
+            <strong>Horário</strong>
+            <p>Seg–Sex: 9h às 18h</p>
+          </div>
+        </div>
+        <div class="social-links reveal" style="margin-top:1rem;">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+          <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+ 
+      <form class="contato-form reveal" id="contatoForm">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="descricao">Descrição</label>
+          <textarea id="descricao" name="descricao" rows="5" placeholder="Descreva sua dúvida ou pedido..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-btn">
+          <i class="fas fa-paper-plane"></i> Enviar Mensagem
+        </button>
+        <p class="form-success" id="formSuccess">✅ Mensagem enviada com sucesso!</p>
+      </form>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">
+          <img src="../src/assets/icons8-controle-48.png" alt="Logo" />
+          <span>Nexus<span class="accent">Forge</span></span>
+        </a>
+        <p>Periféricos e acessórios gamer com qualidade premium. Feito por gamers, para gamers.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="portifolio.html">Portfólio</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Produtos</h4>
+          <ul>
+            <li><a href="portifolio.html">Periféricos</a></li>
+            <li><a href="portifolio.html">Monitores</a></li>
+            <li><a href="portifolio.html">Cadeiras</a></li>
+            <li><a href="portifolio.html">Headsets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> contato@nexusforge.com.br</li>
+            <li><i class="fas fa-phone"></i> (11) 99999-0000</li>
+            <li><i class="fab fa-whatsapp"></i> (11) 99999-0001</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 NexusForge. Todos os direitos reservados.</p>
+      <p>Desenvolvido com <i class="fas fa-heart accent"></i> por gamers</p>
+    </div>
+  </footer>
+ 
+  <script src="../src/js/script.js"></script>
+</body>
+</html>
